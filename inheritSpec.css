@@ -1,0 +1,46 @@
+body {
+    color: coral;
+
+    /* border can not be inherited as an example */
+    border: 10px solid coral;
+}
+
+/* Specificity */
+/* In CSS when there are conflicting styles being applied to the same element a set of rules are used to decide what style gets applied */
+
+div {
+    color: firebrick;
+}
+
+/* an element selector is more specific than a div selector */
+h2 {
+    color: darkblue;
+}
+
+/* class selector is more specific than an element selector */
+
+.one {
+    color: lightgreen;
+}
+
+/* id selector is more specific than a class or attribute selector */
+
+#ring {
+    color: lightsalmon;
+}
+
+/* an attribute selector is more specific than class selector */
+
+a[href="#"] {
+    background-color: yellow;
+}
+
+/* An element will only inherit a style if it does not already have one set */
+
+p {
+    color: blue;
+}
+
+#lotr {
+    color: darkgreen;
+}
